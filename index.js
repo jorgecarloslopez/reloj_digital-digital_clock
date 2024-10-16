@@ -13,3 +13,6 @@ function actualizarReloj() {
   const horaActual = `${horas}:${minutos}:${segundos}`;
   reloj.textContent = horaActual;
 }
+
+setInterval(actualizarReloj, 1000);
+actualizarReloj();
